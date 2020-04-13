@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 //import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty","json:F:\\selenium\\reports\\cucumber.json"},tags= {"@Payment","@Cart"})
+@CucumberOptions(plugin = {"pretty","json:F:\\selenium\\reports\\cucumber.json"},tags= {"@Payment"})
 public class Runner3 {
 
 } 
