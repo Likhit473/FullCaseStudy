@@ -1,7 +1,7 @@
 @Register
 Feature: Register
 
-CaseStudy
+
 Business rules:
  
  - user should open TestMeApp
