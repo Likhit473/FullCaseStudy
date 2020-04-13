@@ -5,7 +5,7 @@ Feature: Register
 Business rules:
  
  - user should open TestMeApp
- 
+ @Regisration
  Scenario: Valid Registaration condition
  Given  user should open signup page
  When   user enters all details
@@ -34,7 +34,7 @@ Business rules:
  |search|
  |Head|
  
- @qCart
+ @Cart
 Scenario: The one where the users moves to cart without adding any item
 
 
