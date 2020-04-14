@@ -15,6 +15,8 @@ import cucumber.api.java.en.When;
 
 public class StepDef1 {
 	WebDriver driver;
+	List<WebElement> links;
+	int linkscount;
 	@Given("^user should open signup page$")
 	public void user_should_open_signup_page() throws Throwable {
 		 System.setProperty("webdriver.chrome.driver","C:\\DRIVERS\\chromedriver.exe");
@@ -54,6 +56,7 @@ public class StepDef1 {
 		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
 		String title = driver.getTitle();
 		Assert.assertEquals(title,"Login");
+		driver.close();
 	}
 	@Given("^open online testmeapp$")
 	public void open_online_testmeapp() throws Throwable {
@@ -145,11 +148,10 @@ public class StepDef1 {
 		WebElement expected = driver.findElement(By.xpath("html/body/b/section/div/div/div/div[2]/p"));
 		Assert.assertEquals("Your order has been confirmed", expected.getText());
 		Assert.assertEquals(true,true);
-		
+		driver.close();
 
 	}
-	List<WebElement> links;
-	int linkscount;
+	
 	@Given("^Logininto TestMeapp$")
 	public void logininto_TestMeapp() throws Throwable {
 		System.setProperty("webdriver.chrome.driver","C:\\DRIVERS\\chromedriver.exe");

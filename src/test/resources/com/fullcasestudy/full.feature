@@ -1,17 +1,17 @@
-@Register
+@TestmeApp
 Feature: Register
 
 
 Business rules:
  
  - user should open TestMeApp
- @Regisration
+ 
  Scenario: Valid Registaration condition
  Given  user should open signup page
  When   user enters all details
  Then   click on registaration able to see homepage
  
-@Login
+
  Scenario Outline: Valid login condition
  Given  open online testmeapp
  When   lalitha gives valid username and valid password "<uname>" "<pwd>"
@@ -21,7 +21,7 @@ Business rules:
  |uname|pwd|
  |Lalitha|Password123|
  
- @Payment
+ 
  Scenario Outline:  Valid login condition
  Given  open online testmeapp and login
  When   enter the item "<search>" and click on findDetails
@@ -34,7 +34,7 @@ Business rules:
  |search|
  |Head|
  
- @Cart
+ 
 Scenario: The one where the users moves to cart without adding any item
 
 
