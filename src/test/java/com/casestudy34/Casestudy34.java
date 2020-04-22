@@ -164,9 +164,7 @@ public class Casestudy34 {
 		driver.findElement(By.xpath("//input[@value=\"LOGIN\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"horizontalTab\"]/div[2]/div/div/div/div/form/input")).sendKeys("Trans@457");
 		driver.findElement(By.xpath("//input[@type=\"submit\"]")).click();
-		WebElement expected = driver.findElement(By.xpath("html/body/b/section/div/div/div/div[2]/p"));
-		Assert.assertEquals("Your order has been confirmed", expected.getText());
-		Assert.assertEquals(true,true);
+		
 		
 
 	}
